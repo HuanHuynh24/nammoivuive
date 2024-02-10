@@ -332,7 +332,7 @@ $( ".lammoipopupnhantien" ).hover(
                   document.getElementById("xuatsotien").src = ""; // Xoá ảnh tiền
 
                   swal("Rất tiếc!", "Bạn không nhận được đồng nào\nNhưng bạn còn lại " + (solanquay - dem) + " lần quay, cố gắng lên nào!", "error");
-              }
+              } else
               if (indicatedSegment.text == 'Lì xì lại tui bạn') { 
                   matluot.play(); // Bật nhạc fail
 
@@ -341,7 +341,7 @@ $( ".lammoipopupnhantien" ).hover(
 
                   swal("Lì xì cho tui bạn ơi, 1907 0083 8520 10 TECHCOMBANK ahihiii\n Số lượt còn lại" + (solanquay - dem), "");
               }
-              
+              else
               if (indicatedSegment.text == 'May mắn ở lượt sau') { 
                   matluot.play(); // Bật nhạc fail
 
@@ -369,7 +369,7 @@ $( ".lammoipopupnhantien" ).hover(
                   document.getElementById("xuatsotien").src = ""; // Xoá ảnh tiền
 
                   swal("Rất tiếc!", "Bạn không nhận được đồng nào và số lượt quay đã hết!", "error");
-              } if (indicatedSegment.text == 'Lì xì lại tui bạn') { // Nếu quay vào 0k
+              } else if (indicatedSegment.text == 'Lì xì lại tui bạn') { // Nếu quay vào 0k
                   matluot.play(); // Bật nhạc fail
 
                   document.getElementById("annhantien").style.display = "none"; // Ẩn nút nhận tiền
